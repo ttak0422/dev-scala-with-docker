@@ -1,0 +1,11 @@
+version: "3"
+services: 
+    scala:
+        build: ./docker/scala
+        user: 1000:1000
+        volumes: 
+            - .:/workspace/dev-scala-with-docker
+            - sbt-cache:/home/dev
+        working_dir: /workspace/dev-scala-with-docker
+volumes: 
+    sbt-cache:
