@@ -5,5 +5,5 @@
     ],
     "service": "scala",
     "remoteUser": "dev",
-    "workspaceFolder": "/workspace/dev-scala-with-docker"
+    "workspaceFolder": "/home/dev/dev-scala-with-docker"
 }
