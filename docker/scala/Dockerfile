@@ -12,7 +12,10 @@ RUN apt-get update \
     && groupadd --gid $USER_GID $USERNAME \
     && useradd -s /bin/bash --uid $USER_UID --gid $USER_GID -m $USERNAME \
     && apt-get autoremove -y \
-    && apt-get clean -y 
+    && apt-get clean -y \
+    # volumes
+    && mkdir /home/dev/.sbt /home/dev/.ivy2 \
+    && chown dev:dev /home/dev/.sbt /home/dev/.ivy2
 
 ENV HOME=/home/dev
 ENV DEBIAN_FRONTEND=dialog
