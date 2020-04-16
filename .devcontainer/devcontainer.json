@@ -1,8 +1,7 @@
 {
     "name": "dev-scala-with-docker",
     "dockerComposeFile": [
-        "../docker-compose.yml",
-        "docker-compose.devcontainer.yml"
+        "../docker-compose.yml"
     ],
     "service": "scala",
     "remoteUser": "dev",

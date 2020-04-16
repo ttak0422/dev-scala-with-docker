@@ -7,5 +7,6 @@ services:
             - .:/workspace/dev-scala-with-docker
             - sbt-cache:/home/dev
         working_dir: /workspace/dev-scala-with-docker
+        tty: true
 volumes: 
     sbt-cache:
