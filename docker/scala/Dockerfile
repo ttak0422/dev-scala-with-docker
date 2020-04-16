@@ -14,4 +14,5 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean -y 
 
+ENV HOME=/home/dev
 ENV DEBIAN_FRONTEND=dialog
